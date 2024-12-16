@@ -1,5 +1,5 @@
 [settings]
-arch=x86_64
+arch=x86
 build_type=Release
 compiler=gcc
 compiler.cppstd=gnu17
@@ -8,8 +8,15 @@ compiler.version=14
 os=Windows
 
 [buildenv]
-CC=x86_64-w64-mingw32-gcc
-CXX=x86_64-w64-mingw32-g++
-LD=x86_64-w64-mingw32-ld
-INCLUDE=/usr/x86_64-w64-mingw32/include
-LIB=/usr/x86_64-w64-mingw32/lib
+CC=i686-w64-mingw32-gcc
+CXX=i686-w64-mingw32-g++
+LD=i686-w64-mingw32-ld
+INCLUDE=/usr/i686-w64-mingw32/include
+LIB=/usr/i686-w64-mingw32/lib
+
+[runenv]
+CC=i686-w64-mingw32-gcc
+CXX=i686-w64-mingw32-g++
+LD=i686-w64-mingw32-ld
+INCLUDE=/usr/i686-w64-mingw32/include
+LIB=/usr/i686-w64-mingw32/lib
